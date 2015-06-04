@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'pry'
 
 require "samplserv/version"
 
@@ -56,7 +57,7 @@ end
 
 post '/makeus' do
   v = params['v'] ? params['v'].to_i : 1
-  spawn("afplay samples/MakeUs#{v}.mp3")
+  spawn("afplay samples/MakesUs#{v}.mp3")
 end
 
 post '/morethan' do
@@ -86,7 +87,7 @@ end
 
 post '/workls' do
   v = params['v'] ? params['v'].to_i : 1
-  spawn("afplay samples/Workls#{v}.mp3")
+  spawn("afplay samples/WorkIs#{v}.mp3")
 end
 
 post '/workit' do
