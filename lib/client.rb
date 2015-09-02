@@ -1,9 +1,10 @@
 require 'pry'
 require 'httparty'
 
+
 class SamplParty
   include HTTParty
-  base_uri "http://localhost:4567"
+  base_uri "http://10.0.0.115:4567"
 
   def play_harder(version=nil)
     options = {}
@@ -147,13 +148,13 @@ toy.play_faster(1)
 sleep 10.0
 toy.play_harder(2)
 sleep 0.5
-toy.play_harder(1)
-sleep 0.5
 toy.play_harder(2)
 sleep 0.5
 toy.play_harder(1)
 sleep 0.5
-toy.play_harder(2)
+toy.play_harder(1)
+sleep 0.5
+toy.play_harder(1)
 sleep 0.5
 toy.play_hour
 sleep 0.25
